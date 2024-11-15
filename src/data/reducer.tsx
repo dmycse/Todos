@@ -4,7 +4,7 @@ export type Todo = {
   completed: boolean;
 };
 
-export type TodoState = {
+export type TodosState = {
   todos: Todo[];
 };
 
@@ -13,7 +13,7 @@ export const enum ACTION_TYPE {
   UPDATE_TODO,
   TOGGLE_TODO,
   REMOVE_TODO,
-}
+};
 
 type ReducerAction = {
   type: ACTION_TYPE;
@@ -21,7 +21,7 @@ type ReducerAction = {
 };
 
 
-export function reducer(state: TodoState, action: ReducerAction): TodoState {
+export function reducer(state: TodosState, action: ReducerAction): TodosState {
 
   let { type, payload } = action;
 
