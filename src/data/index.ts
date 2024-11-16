@@ -1,5 +1,4 @@
 export * from './reducer';
 export * from './context';
-export { initialState } from './initialTodos';
-
-export { todoStatus } from './constants';
+export * from './constants';
+export * from './initialTodos';
