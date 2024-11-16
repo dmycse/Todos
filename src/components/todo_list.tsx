@@ -2,8 +2,9 @@ import { useTodosState } from "../data";
 
 import { TodoItem } from "./todo_item";
 import { TodoSummary } from "./todo_summary";
-import { Paper, Stack, Typography } from "@mui/material";
 import { NewTodo } from "./new_todo";
+import { SheetsStack } from "../ui";
+import { Paper, Stack, Typography } from "@mui/material";
 
 
 export let TodoList = () => {
@@ -21,14 +22,15 @@ export let TodoList = () => {
     return (
       <>
         <Paper 
-          elevation={3} 
+          elevation={10} 
           sx={{
             paddingTop: 2,
             height: '100%',
             display: 'flex',
             flexDirection: 'column', 
             border: '1px solid #ccc', 
-            textAlign: 'center'
+            textAlign: 'center',
+            boxShadow: '0 1px 1px rgba(0,0,0,0.15) ',
           }}
         >
           <NewTodo />
@@ -47,6 +49,7 @@ export let TodoList = () => {
           </Typography>
           <TodoSummary />
         </Paper>
+        <SheetsStack />
       </>
     );
   };
@@ -83,6 +86,7 @@ export let TodoList = () => {
         </Stack>
         <TodoSummary />
       </Paper>
+      <SheetsStack />
     </>
   );
 };
