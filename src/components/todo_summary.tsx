@@ -5,9 +5,7 @@ import { ButtonSummary } from "../ui/button_summary";
 export let TodoSummary = () => {
 
   let {state, dispatch} = useTodosState();
-
-  console.log('view: ', state.view);
-
+  
   let totalTodos = state.todos.length;
   let completedTodosCount = state.todos.filter(todo => todo.completed).length;
   let activeTodosCount = totalTodos - completedTodosCount;

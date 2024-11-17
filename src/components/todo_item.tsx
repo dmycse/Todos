@@ -1,7 +1,8 @@
 import { ChangeEvent } from "react";
-import { Stack, Checkbox, Input } from "@mui/material";
+import { Stack, Checkbox, Input, Button } from "@mui/material";
 import { CheckBoxDoneIcon, CheckBoxIcon } from "../ui";
 import { ACTION_TYPE, useTodosState } from "../data";
+import DeleteIcon from '@mui/icons-material/Delete';
 
 type TodoItemProps = {
   id: number;
@@ -39,13 +40,18 @@ export let TodoItem = ({ id, title, completed }: TodoItemProps) => {
           fontSize: '20px', 
           fontFamily: 'Inter', 
           fontWeight: '200', 
-          textDecoration: completed ? 'line-through' : 'none'
+          textDecoration: completed ? 'line-through' : 'none',
         }}
         value={title}
         onChange={(e: ChangeEvent<HTMLInputElement>) => {
           dispatch({type: ACTION_TYPE.UPDATE_TODO, payload: {id, title: e.target.value}});
         }}
       />
+      <Button>
+        <DeleteIcon
+          sx={{color: '#000', opacity: '0.2', '&:hover': {opacity: '0.6'}}} 
+          onClick={() => dispatch({type: ACTION_TYPE.REMOVE_TODO, payload: {id}})}/>
+      </Button>
     </Stack>
   );
 };
