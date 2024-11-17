@@ -59,7 +59,8 @@ export let TodoList = () => {
       <Paper 
         elevation={3} 
         sx={{ 
-          flexGrow: 1, 
+          flexGrow: 1,
+          height: '100%', 
           border: '1px solid #ccc',
           display: 'flex',
           flexDirection: 'column',

@@ -34,7 +34,10 @@ export let NewTodo = () => {
         type='button'
         variant="text"
         onClick={addNewTodo}
-        sx={{padding: '0px'}}
+        sx={{
+          padding: '0px',
+          '& :hover': {color: '#753c3c'}
+        }}
       >
         <KeyboardArrowDownIcon sx={{width: '40px', height:'40px', color: '#ccc'}} />
       </Button>
