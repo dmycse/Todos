@@ -30,6 +30,7 @@ export let TodoItem = ({ id, title, completed }: TodoItemProps) => {
         icon={<CheckBoxIcon />}
         checkedIcon={<CheckBoxDoneIcon />}
         inputProps={{ 'aria-label': 'controlled' }}
+        data-testid="checkbox"
       />
       <Input 
         type="text"

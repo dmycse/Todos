@@ -21,7 +21,7 @@ export let NewTodo = () => {
 
   return (
     <Box
-      component='header'
+      component='div'
       sx={{
         paddingTop: 1, 
         paddingBottom: 1, 
@@ -46,9 +46,11 @@ export let NewTodo = () => {
         placeholder="What needs to be done?"
         disableUnderline
         inputProps={{style: {fontFamily: 'Inter', fontSize: '20px', fontWeight: '100', fontStyle: 'italic'}}} 
-        sx={{ flexBasis: '50%'}}  
+        sx={{ flexBasis: '100%'}}  
         inputRef={inputRef}
         onKeyDown={e => e.key === 'Enter' && addNewTodo(e)}
+        onFocus={() => dispatch({type: ACTION_TYPE.VIEW_ALL_TODO})}
+        data-testid="input"
       />
     </Box>
   );
