@@ -3,7 +3,7 @@
   <h3 align="center">Todos List Implementation</h3>
 
    <div align="center">
-     This Website buld on <a href="https://react.dev/" target="_blank"><b>React v.18.3</b> </a>using <a href="https://vite.dev/" target="_blank"><b>Vite</b> build tool and <a href="https://mui.com/" target="_blank"><b>MaterialUI v.6</b> component library</a>
+     This Website buld on <a href="https://react.dev/" target="_blank"><b>React v.18.3</b> </a> using <a href="https://vite.dev/" target="_blank"><b>Vite</b> </a> build tool and <a href="https://mui.com/" target="_blank"><b>MaterialUI v.6</b> </a> component library
     </div>
 </div>
 
@@ -11,7 +11,6 @@
 
 - [App Features](#features)
 - [Project setup](#setup)
-- [Tech Details](#details)
 - [Tech Stack](#tech-stack)
 - [Web-link](#web-link)
 
@@ -26,7 +25,7 @@
 * **Mark a todo as completed**
 * **Delete only completed todos**
 
-### <a name="features">Project setup</a>
+### <a name="setup">Project setup</a>
 1. Clone the repository: <code>git clone https://github.com/dmycse/Cadextask.git</code>
 2. Navigate into local folder of the repository
 3. Install dependencies. Run <code>npm install</code>
@@ -51,4 +50,4 @@
 
 
 ### <a name="web-link">Web-link</a>
-This repository contains the code corresponding to an in-depth app available on web-link: <a href="https://cadextask.vercel.app" target="_blank"><b>Todos</b></a>
+This repository contains the code corresponding to an in-depth app available on web-link: <a href="https://dmycse.github.io/Todos/" target="_blank"><b>Todos</b></a>
