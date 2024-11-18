@@ -2,6 +2,7 @@
   "name": "todotask",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://dmycse.github.io/Todos/",
   "type": "module",
   "scripts": {
     "start": "vite",
