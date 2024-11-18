@@ -50,4 +50,4 @@
 
 
 ### <a name="web-link">Web-link</a>
-This repository contains the code corresponding to an in-depth app available on web-link: <a href="https://dmycse.github.io/Todos/" target="_blank"><b>Todos</b></a>
+This repository contains the code corresponding to an in-depth app available on web-link: <a href="https://dmycse.github.io/Todos" target="_blank"><b>Todos</b></a>
