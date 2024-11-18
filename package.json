@@ -12,7 +12,7 @@
     "test": "jest --watchAll",
     "cov": "jest --coverage --collectCoverageFrom='src/**/*.{ts,tsx}'",
     "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "deploy" : "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
