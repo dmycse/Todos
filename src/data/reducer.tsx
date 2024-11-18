@@ -32,9 +32,7 @@ type ReducerAction = {
 };
 
 
-export function reducer(state: TodosState, action: ReducerAction): TodosState {
-
-  let { type, payload } = action;
+export function reducer(state: TodosState, { type, payload }: ReducerAction): TodosState {
 
   switch (type) {
     case ACTION_TYPE.ADD_TODO:

@@ -2,7 +2,7 @@ import { createContext, ReactNode, useContext, useReducer } from 'react';
 import { reducer, TodosState } from './reducer';
 import { initialState } from './initialTodos';
 
-const TodosContext = createContext<{
+export const TodosContext = createContext<{
     state: TodosState, 
     dispatch: React.Dispatch<any>
   }>({
